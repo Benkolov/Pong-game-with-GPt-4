@@ -1,5 +1,6 @@
 import tkinter as tk
 
+
 class Pong(tk.Tk):
     def __init__(self):
         super().__init__()
@@ -47,6 +48,7 @@ class Pong(tk.Tk):
             self.dx = -self.dx
 
         self.after(10, self.animate)
+
 
 if __name__ == "__main__":
     Pong()

@@ -1,5 +1,6 @@
 import tkinter as tk
 
+
 class Pong(tk.Tk):
     def __init__(self):
         super().__init__()
@@ -66,6 +67,7 @@ class Pong(tk.Tk):
         x1, y1, x2, y2 = self.canvas.coords(self.ball)
         self.canvas.move(self.ball, 390 - x1, 190 - y1)
         self.dx = -self.dx
+
 
 if __name__ == "__main__":
     Pong()
